@@ -80,3 +80,10 @@ alias yolo="ANTHROPIC_API_KEY=sk-xxxx ANTHROPIC_BASE_URL=http://xxxxx ANTHROPIC_
 
 source ~/.zshrc
 ```
+
+
+# 如果一直显示未登录
+```sh
+rm ~/.claude.json
+删除这个文件后,创建一个新的文件, 在里面写上 hasCompletedOnboarding: true, 用这种方法来跳过登录
+```
