@@ -81,6 +81,17 @@ alias yolo="ANTHROPIC_API_KEY=sk-xxxx ANTHROPIC_BASE_URL=http://xxxxx ANTHROPIC_
 source ~/.zshrc
 ```
 
+- 亲测有效
+  - 为啥我设置了GPT，但是打开之后还是Sonnet 4.6 呢?
+  ```sh
+  alias yolo="
+  ANTHROPIC_API_KEY=sk-claude-proxy-local-20260416 \
+  ANTHROPIC_BASE_URL=http://127.0.0.1:8317 \
+  ANTHROPIC_DEFAULT_HAIKU_MODEL=gpt-5.2 \
+  ANTHROPIC_DEFAULT_SONNET_MODEL=gpt-5.2 \
+  claude --dangerously-skip-permissions"
+  ```
+
 
 # 如果一直显示未登录
 ```sh
